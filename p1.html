@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amart</title>
+    <link rel="stylesheet" href="./css/globalcss.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/aside.css" />
+    <link rel="stylesheet" href="/css/features.css" />
+    <link rel="stylesheet" href="./css/products.css" />
+    <link rel="stylesheet" href="./css/categories.css" />
+    <link rel="stylesheet" href="./css/review.css" />
+    <link rel="stylesheet" href="./css/blogs.css" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/creator.css">
+    <script src="https://kit.fontawesome.com/b73e3252cf.js" crossorigin="anonymous"></script>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        header div h1 span {
+            color: orange;
+        }
+
+        header div h1 span i {
+            color: orange;
+        }
+
+        header div h1 {
+            color: blue;
+        }
+
+        header ul {
+            display: none;
+            align-items: center;
+            justify-content: start;
+            padding: 0;
+            gap: 10px;
+        }
+
+        header ul li {
+            list-style: none;
+            transition: all 0.1s ease-in-out;
+        }
+
+        header ul li:hover {
+            color: orange;
+        }
+
+        header section i {
+            background-color: rgb(238, 238, 238);
+            padding: 20px 17px;
+            color: rgb(17, 15, 65);
+            transition: all 0.1s ease-in-out;
+        }
+
+        header section i:hover {
+            background-color: orange;
+        }
+
+        header section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+
+
+
+        /* Extra small devices (phones, 640px and down) */
+        @media only screen and (max-width: 640px) {
+            header section i {
+                padding: 15px 12px;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 640px and up) */
+        @media only screen and (min-width: 640px) {}
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            header ul {
+                display: flex;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 1024px and up) */
+        @media only screen and (min-width: 1024px) {}
+
+        /* Extra large devices (large laptops and desktops, 1280px and up) */
+        @media only screen and (min-width: 1280px) {}
+
+        aside {
+            background: url(/project1/ASSETS/IMAGE/GLOBALIMAGES/banner-bg.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: capitalize;
+            padding: 100px;
+        }
+
+        aside div {
+            width: 400px;
+            text-align: center;
+        }
+
+        aside div h1 span {
+            color: orange;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 640px) {
+            aside {
+                background-size: 10 100%;
+                padding: 60px 20px;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 640px) {
+            aside {
+                background-size: 100% 100%;
+                padding: 60px 60px;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            aside {
+                background-size: 100% 100%;
+                padding: 70px;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 1024px) {
+            aside {
+                background-size: 100% 100%;
+                padding: 80px;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1280px) {
+            aside {
+                background-size: 100% 100%;
+                padding: 100px;
+            }
+        }
+
+        @font-face {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 900;
+            src: url("/project1/ASSETS/FONTS/FONTROBOTO/Roboto-Black.ttf");
+        }
+
+        @font-face {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            src: url("/project1/ASSETS/FONTS/FONTROBOTO/Roboto-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 100;
+            src: url("/project1/ASSETS/FONTS/FONTROBOTO/Roboto-Thin.ttf");
+        }
+
+        @font-face {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 300;
+            src: url("/project1/ASSETS/FONTS/FONTROBOTO/Roboto-Light.ttf");
+        }
+
+        @font-face {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            src: url("/project1/ASSETS/FONTS/FONTROBOTO/Roboto-Medium.ttf");
+        }
+
+        @font-face {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            src: url("/project1/ASSETS/FONTS/FONTROBOTO/Roboto-Bold.ttf");
+        }
+
+        * {
+            font-family: roboto;
+            color: rgb(17, 15, 65);
+            user-select: none;
+
+        }
+
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            font-weight: bolder;
+            font-family: Roboto;
+        }
+
+        p {
+            font-weight: 500;
+        }
+
+        button {
+            padding: 10px 25px;
+            background: transparent;
+            border-radius: 5px;
+            text-transform: capitalize;
+            font-size: 16px;
+            transition: all 0.1s ease-in-out;
+        }
+
+        button:hover {
+            background-color: orange;
+            color: white;
+            font-weight: 700;
+            transform: scale(1.05);
+        }
+
+        div.mart {
+            background-color: rgb(238, 238, 238);
+            padding-bottom: 20px;
+        }
+
+        div.organic h1 span {
+            clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%, 10% 50%);
+            background-color: orange;
+            padding: 10px 25px;
+            display: inline-block;
+            width: 130px;
+        }
+
+
+
+        div.f1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+
+        div.organic h1 {
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+
+        .card {
+            height: 350px;
+            width: 350px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.2s ease-in-out;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .card div {
+            height: 340px;
+            width: 340px;
+            border: 1px rgb(214, 212, 212) solid;
+            text-align: center;
+            text-transform: capitalize;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease-in-out;
+
+
+        }
+
+        .card:hover {
+            height: 340px;
+            width: 340px;
+            padding: 0;
+        }
+
+        .card>div:hover {
+            border: 7px gray solid;
+
+        }
+
+        .card div img {
+            width: 150px;
+        }
+
+        .card div p {
+            font-weight: 400;
+        }
+
+
+
+
+        /* Extra small devices (phones, 640px and down) */
+        @media only screen and (max-width: 640px) {}
+
+        /* Small devices (portrait tablets and large phones, 640px and up) */
+        @media only screen and (min-width: 640px) {
+
+            div.organic h1 {
+                margin: 10px 10px;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            div.organic h1 {
+                margin: 20px 0;
+            }
+
+
+
+        }
+
+        /* Large devices (laptops/desktops, 1024px and up) */
+        @media only screen and (min-width: 1024px) {}
+
+        /* Extra large devices (large laptops and desktops, 1280px and up) */
+        @media only screen and (min-width: 1280px) {}
+
+        .f2 {
+            display: grid;
+
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            row-gap: 30px;
+            column-gap: 20px;
+        }
+
+        .card2 {
+            background-color: white;
+            height: 290px;
+            width: 240px;
+            padding: 10px;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card2>div {
+            text-align: center;
+            text-transform: capitalize;
+            height: 280px;
+            width: 230px;
+            border: 1px solid grey;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card2:hover {
+            padding: 0;
+        }
+
+        .card2>div:hover {
+            border: 7px solid gray;
+        }
+
+        .card2 div h2 {
+            margin: 2px 0;
+        }
+
+        .card2 div p {
+            margin: 5px 0;
+        }
+
+        .card2 div img {
+            width: 150px;
+        }
+
+        div.star {
+            padding: 5px 0;
+        }
+
+        /* Extra small devices (phones, 640px and down) */
+        @media only screen and (max-width: 640px) {
+            .f2 {
+                grid-template-columns: 260px;
+                grid-auto-rows: 300px;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 640px and up) */
+        @media only screen and (min-width: 640px) {
+            .f2 {
+                grid-template-columns: 260px 260px;
+                grid-auto-rows: 300px;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .f2 {
+                grid-template-columns: 260px 260px;
+                grid-auto-rows: 300px;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 1024px and up) */
+        @media only screen and (min-width: 1024px) {
+            .f2 {
+                grid-template-columns: 260px 260px 260px;
+                grid-auto-rows: 300px;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1280px and up) */
+        @media only screen and (min-width: 1280px) {
+            .f2 {
+                grid-template-columns: 260px 260px 260px 260px;
+                grid-auto-rows: 300px;
+            }
+        }
+
+        div.f3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 0px 40px;
+        }
+
+
+
+        div.organic h1 {
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        #clip3 {
+            width: 160px;
+        }
+
+        .card3 {
+            height: 280px;
+            width: 250px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .card3 div {
+            height: 270px;
+            width: 240px;
+            border: 1px rgb(214, 212, 212) solid;
+            text-align: center;
+            text-transform: capitalize;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease-in-out;
+
+
+        }
+
+        .card3:hover {
+            height: 270px;
+            width: 240px;
+            padding: 0;
+        }
+
+        .card3>div:hover {
+            border: 7px gray solid;
+
+        }
+
+        .card3 div img {
+            width: 150px;
+        }
+
+        .card3 div h2 {
+            margin: 10px 0;
+        }
+
+        .card3 div p {
+            font-weight: 400;
+            margin: 0px 0 10px;
+        }
+
+
+
+
+        /* Extra small devices (phones, 640px and down) */
+        @media only screen and (max-width: 640px) {}
+
+        /* Small devices (portrait tablets and large phones, 640px and up) */
+        @media only screen and (min-width: 640px) {
+
+            div.organic h1 {
+                margin: 10px 10px;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            div.organic h1 {
+                margin: 20px 0;
+            }
+
+
+
+        }
+
+        /* Large devices (laptops/desktops, 1024px and up) */
+        @media only screen and (min-width: 1024px) {}
+
+        /* Extra large devices (large laptops and desktops, 1280px and up) */
+        @media only screen and (min-width: 1280px) {}
+
+        div.f4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+
+
+        div.organic h1 {
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        #clip4 {
+            width: 100px;
+        }
+
+        .card4 {
+            height: 330px;
+            width: 270px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .card4>div {
+            height: 320px;
+            width: 260px;
+            border: 1px rgb(214, 212, 212) solid;
+            text-align: center;
+            text-transform: capitalize;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease-in-out;
+
+
+        }
+
+        .card4:hover {
+            height: 320px;
+            width: 260px;
+            padding: 0;
+        }
+
+        .card4>div:hover {
+            border: 7px gray solid;
+
+        }
+
+        .card4 div img {
+            width: 100px;
+            clip-path: circle(50% at 50% 50%);
+
+        }
+
+        .card4 div h2 {
+            margin: 10px 0;
+        }
+
+        .card4 div p {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 10px 10px 10px;
+        }
+
+
+
+
+        /* Extra small devices (phones, 640px and down) */
+        @media only screen and (max-width: 640px) {}
+
+        /* Small devices (portrait tablets and large phones, 640px and up) */
+        @media only screen and (min-width: 640px) {
+
+            div.organic h1 {
+                margin: 10px 10px;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            div.organic h1 {
+                margin: 20px 0;
+            }
+
+
+
+        }
+
+        /* Large devices (laptops/desktops, 1024px and up) */
+        @media only screen and (min-width: 1024px) {}
+
+        /* Extra large devices (large laptops and desktops, 1280px and up) */
+        @media only screen and (min-width: 1280px) {}
+
+        div.f5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+        div.organic h1 {
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+
+        .card5 {
+            height: 350px;
+            width: 380px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            transition: all 0.3s ease-in-out;
+            margin: 10px;
+            text-transform: capitalize;
+            padding-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        .card5 section {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 19px;
+            border-bottom: 1px solid gray;
+        }
+
+        .card5 section p {
+            margin: 10px;
+        }
+
+        #clip5 {
+            width: 90px;
+        }
+
+        .card5:hover {
+
+            transform: scale(1.03);
+        }
+
+        .card5 h2 {
+            margin: 10px 0;
+            padding: 0 20px;
+        }
+
+        .card5 section p i {
+            color: orange;
+            margin-right: 7px;
+        }
+
+
+
+        .card5 img {
+            width: 100%;
+            height: 45%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 6px 6px 0 0;
+        }
+
+        .card5 button {
+            margin: 0 20px;
+        }
+
+        .card5 p {
+            font-weight: 400;
+            padding: 0 20px;
+            margin-top: 0px;
+        }
+
+
+
+
+        /* Extra small devices (phones, 640px and down) */
+        @media only screen and (max-width: 640px) {}
+
+        /* Small devices (portrait tablets and large phones, 640px and up) */
+        @media only screen and (min-width: 640px) {
+
+            div.organic h1 {
+                margin: 10px 10px;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            div.organic h1 {
+                margin: 20px 0;
+            }
+
+
+
+        }
+
+        /* Large devices (laptops/desktops, 1024px and up) */
+        @media only screen and (min-width: 1024px) {}
+
+        /* Extra large devices (large laptops and desktops, 1280px and up) */
+        @media only screen and (min-width: 1280px) {}
+
+        .creator {
+            margin: 0 50px;
+        }
+
+        .creator h3 {
+            text-align: center;
+            text-transform: capitalize;
+
+            & span {
+                color: orange;
+            }
+        }
+
+
+        footer {
+            min-height: 45vh;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 50px;
+            text-transform: capitalize;
+        }
+
+        footer>div {
+            flex: 1;
+            margin: 0 20px;
+            min-width: 220px;
+        }
+
+        footer div h2 {
+            color: blue;
+        }
+
+        .about h2 span {
+            color: orange;
+        }
+
+        .about h2 span i {
+            color: orange;
+            padding: 0;
+            background-color: white;
+        }
+
+        footer div ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer div ul li {
+            padding: 5px 0;
+        }
+
+        footer div ul li:hover {
+            transform: translateX(7px);
+        }
+
+        footer div p {
+            margin-bottom: 10px;
+        }
+
+        footer div input {
+            border: none;
+            background-color: rgb(211, 207, 207);
+            padding: 10px 10px;
+            width: 200px;
+            border-radius: 2px;
+        }
+
+        footer div input:focus {
+            padding: 12px;
+
+        }
+
+        footer div button {
+            margin: 10px 0;
+        }
+
+        .about i {
+            background-color: rgb(207, 207, 207);
+            padding: 8px;
+            border-radius: 5px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .about>i:hover {
+            background-color: orange;
+        }
+
+        footer div ul li i {
+            color: orange;
+            margin-right: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+
+            <h1>Achievers <span>IT <i class="fa-solid fa-basket-shopping"></i></span></h1>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>Features</li>
+            <li>Products</li>
+            <li>Categories</li>
+            <li>Review</li>
+            <li>Blogs</li>
+        </ul>
+        <section>
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            <i class="fa-solid fa-cart-shopping fa-xl"></i>
+            <i class="fa-solid fa-user fa-xl"></i>
+        </section>
+    </header>
+    <div class="mart">
+        <aside>
+            <div>
+                <h1>fresh and <span>organic </span> products for your</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                    inventore, delectus ea velit quos voluptatibus ipsa.
+                </p>
+                <button>shop now</button>
+            </div>
+        </aside>
+        <div class="organic">
+            <h1>our <span>features</span></h1>
+            <div class="f1">
+                <div class="card">
+                    <div>
+                        <img src="../ASSETS/IMAGE/GLOBALIMAGES/feature-img-1.png" alt="" />
+                        <h2>fresh and organic</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Quisquam, deserunt!
+                        </p>
+                        <button>read more</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="../ASSETS/IMAGE/GLOBALIMAGES/feature-img-2.pngs" alt="" />
+                        <h2>free delevery</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Quisquam, deserunt!
+                        </p>
+                        <button>read more</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="../ASSETS/IMAGE/GLOBALIMAGES/feature-img-3.png" alt="" />
+                        <h2>easy payments</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Quisquam, deserunt!
+                        </p>
+                        <button>read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="organic">
+            <h1>our <span>products</span></h1>
+            <div class="f2">
+                <div class="card2">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/product-1.png" alt="" />
+                        <h2>orange</h2>
+                        <p>₹ 19</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <button>add to card</button>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/product-2.png" alt="" />
+                        <h2>onion</h2>
+                        <p>₹ 39</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <button>add to card</button>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/product-3.png" alt="" />
+                        <h2>meat</h2>
+                        <p>₹ 199</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <button>add to card</button>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/product-4.png" alt="" />
+                        <h2>cose</h2>
+                        <p>₹ 99</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <button>add to card</button>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/product-5.png" alt="" />
+                        <h2>potato</h2>
+                        <p>₹ 49</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <button>add to card</button>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/product-6.png" alt="" />
+                        <h2>fruit</h2>
+                        <p>₹ 79</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <button>add to card</button>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/product-7.png" alt="" />
+                        <h2>carrot</h2>
+                        <p>₹ 19</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <button>add to card</button>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/product-8.png" alt="" />
+                        <h2>lemon</h2>
+                        <p>₹ 29</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <button>add to card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="organic">
+            <h1>product <span id="clip3">categories</span></h1>
+            <div class="f3">
+                <div class="card3" id="card3">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/cat-1.png" alt="" />
+                        <h2>vegitables</h2>
+                        <p>upto 45% off</p>
+                        <button>shop now</button>
+                    </div>
+                </div>
+                <div class="card3" id="card3">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/cat-2.png" alt="" />
+                        <h2>fresh fruits</h2>
+                        <p>upto 45% off</p>
+                        <button>shop now</button>
+                    </div>
+                </div>
+                <div class="card3" id="card3">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/cat-3.png" alt="" />
+                        <h2>dairy products</h2>
+                        <p>upto 45% off</p>
+                        <button>shop now</button>
+                    </div>
+                </div>
+                <div class="card3" id="card3">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/cat-4.png" alt="" />
+                        <h2>fresh meat</h2>
+                        <p>upto 45% off</p>
+                        <button>shop now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="organic">
+            <h1>costomer's <span id="clip4">review</span></h1>
+            <div class="f4">
+                <div class="card4" id="card3">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/pic-1.png" alt="" />
+
+                        <p>
+                            Lorem, ipsum dolor sit amet elit. Ratione rem ullam, ad tempora!
+                            Libero voluptatum sint similique.
+                        </p>
+                        <h2>john deo</h2>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card4" id="card4">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/pic-2.png" alt="" />
+                        <p>
+                            Lorem, ipsum dolor sit amet elit. Ratione rem ullam, ad tempora!
+                            Libero voluptatum sint similique.
+                        </p>
+                        <h2>alice deo</h2>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card4" id="card3">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/pic-3.png" alt="" />
+                        <p>
+                            Lorem, ipsum dolor sit amet elit. Ratione rem ullam, ad tempora!
+                            Libero voluptatum sint similique.
+                        </p>
+                        <h2>ram deo</h2>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card4" id="card3">
+                    <div>
+                        <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/pic-4.png" alt="" />
+                        <p>
+                            Lorem, ipsum dolor sit amet elit. Ratione rem ullam, ad tempora!
+                            Libero voluptatum sint similique.
+                        </p>
+                        <h2>jimmy deo</h2>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="organic">
+            <h1>our <span id="clip5">blog's</span></h1>
+            <div class="f5">
+                <div class="card5">
+                    <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/blog-1.jpg" alt="" />
+                    <section>
+                        <p><i class="fa-solid fa-user"></i>by user</p>
+                        <p><i class="fa-solid fa-calendar-days"></i>17th sep 2023</p>
+                    </section>
+                    <h2>fresh and organic</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quisquam, deserunt!
+                    </p>
+                    <button>read more</button>
+                </div>
+                <div class="card5">
+                    <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/blog-2.jpg" alt="" />
+                    <section>
+                        <p><i class="fa-solid fa-user"></i>by user</p>
+                        <p><i class="fa-solid fa-calendar-days"></i>17th sep 2023</p>
+                    </section>
+                    <h2>fresh and organic</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quisquam, deserunt!
+                    </p>
+                    <button>read more</button>
+                </div>
+                <div class="card5">
+                    <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/blog-3.jpg" alt="" />
+                    <section>
+                        <p><i class="fa-solid fa-user"></i>by user</p>
+                        <p><i class="fa-solid fa-calendar-days"></i>17th sep 2023</p>
+                    </section>
+                    <h2>fresh and organic</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quisquam, deserunt!
+                    </p>
+                    <button>read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="about">
+            <h2>acheiver <span>it <i class="fa-solid fa-basket-shopping"></i></span> </h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, maiores?</p>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div>
+            <h2>contact info</h2>
+            <ul>
+                <li><i class="fa-solid fa-phone-flip"></i>+91 8073135501</li>
+                <li><i class="fa-solid fa-phone-flip"></i>+91 6309533502</li>
+
+                <li><i class="fa-solid fa-envelope"></i>sreedharsree880@gmail.com</li>
+                <li><i class="fa-solid fa-location-dot"></i>Kupppam, india-517425</li>
+            </ul>
+        </div>
+        <div>
+            <h2>quick link</h2>
+            <ul>
+                <li><i class="fa-solid fa-arrow-right"></i>home</li>
+                <li><i class="fa-solid fa-arrow-right"></i>features</li>
+                <li><i class="fa-solid fa-arrow-right"></i>products</li>
+                <li><i class="fa-solid fa-arrow-right"></i>categories</li>
+                <li><i class="fa-solid fa-arrow-right"></i>review</li>
+                <li><i class="fa-solid fa-arrow-right"></i>blogs</li>
+            </ul>
+        </div>
+        <div>
+            <h2>newsletter</h2>
+            <p>subscribe for latest news</p>
+            <input type="text" placeholder="your email"><br>
+            <button>subscribe</button><br>
+            <img src="/project1/ASSETS/IMAGE/GLOBALIMAGES/payment.png" alt="">
+        </div>
+
+
+    </footer>
+    <div class="creator">
+        <hr>
+        <h3>created by <span>mr M SREEDHAR</span> | all rights reserved</h3>
+    </div>
+</body>
+
+</html>
